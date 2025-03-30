@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portofolio | I Putu Sukma Widyantara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="x-icon" href="tpkh.ico">
+</head>
+<body class="bg-stone-900">
+    <!-- Loading -->
+    <div id="loading-screen" class="fixed inset-0 flex items-center justify-center bg-stone-900 z-50">
+      <div class="flex items-center space-x-2">
+        <div class="w-4 h-4 bg-green-400 rounded-full animate-bounce"></div>
+        <div class="w-4 h-4 bg-green-400 rounded-full animate-bounce delay-150"></div>
+        <div class="w-4 h-4 bg-green-400 rounded-full animate-bounce delay-300"></div>
+      </div>
+    </div>
+    <!-- Loading -->
+
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-green-400 border-b mb-10 fixed top-0 left-0 w-full z-50 hidden">
+      <div class="container mx-auto px-6 py-3 flex items-center justify-between">
+        <a class="text-2xl font-bold text-white" href="#">I Putu Sukma Widyantara</a>
+        <button 
+          class="lg:hidden text-gray-700 focus:outline-none flex flex-col space-y-1" 
+          id="navbarToggler" 
+          aria-label="Toggle navigation"
+        >
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+        </button>
+    
+        <div class="hidden lg:flex lg:items-center lg:space-x-8" id="navbarMenu">
+          <a class="text-white hover:text-gray-900 font-medium" href="#jumbotron">Home</a>
+          <a class="text-white hover:text-gray-900 font-medium" href="#latar">Background</a>
+          <a class="text-white hover:text-gray-900 font-medium" href="#Achievement">Achievement</a>
+          <a class="text-white hover:text-gray-900 font-medium" href="#Contact">Contact</a>
+        </div>
+      </div>
+    
+      <div 
+        class="lg:hidden overflow-hidden max-h-0 transition-all duration-300 ease-in-out bg-green-400 border-t" 
+        id="mobileMenu"
+      >
+        <div class="flex flex-col space-y-3 py-4 px-6">
+          <a class="text-white hover:text-gray-900 font-medium" href="#jumbotron">Home</a>
+          <a class="text-white hover:text-gray-900 font-medium" href="#latar">Background</a>
+          <a class="text-white hover:text-gray-900 font-medium" href="#Achievement">Achievement</a>
+          <a class="text-white hover:text-gray-900 font-medium" href="#Contact">Contact</a>
+        </div>
+      </div>
+    </nav>    
+    <!-- Navbar -->
+      
+      
+    <!-- Jumbotron -->
+    <section id="jumbotron" class="pt-30 mt-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <!-- Bagian Teks -->
+                <div class="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
+                    <h1 class="text-base font-semibold text-green-300 md:text-xl lg:text-2xl">
+                        Halo Semua, Saya
+                        <span class="block font-bold text-green-500 text-4xl mt-1 lg:text-5xl">
+                            I Putu Sukma W.
+                        </span>
+                    </h1>
+                    <h2 class="font-medium text-slate-500 text-lg mb-5 sm:text-xl">
+                        <span class="text-lime-300">Website Developer</span> | Network Engineer | Mahasiswa ITS
+                    </h2>
+                    <p class="font-medium text-slate-400 mb-10 leading-relaxed md:text-xl">
+                        Mahasiswa ITS yang ingin menjadi bagian dari kepengurusan Kabinet Asraya Grivika
+                    </p>
+                    <a href="http://wa.me/082289960215" class="text-base font-semibold text-white bg-green-400 py-3 px-8 rounded-full hover:shadow-lg hover:bg-red-300 transition duration-300 ease-in-out">
+                        Contact Me
+                    </a>
+                </div>
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="relative mt-10 lg:mt-0">
+                        <img src="g1.png" alt="Profile Image" class="max-w-full mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Jumbotron -->
+
+    <!-- Latar Belakang -->
+    <section id="latar" class="pt-36 pb-32">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <!-- Bagian Latar Belakang -->
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-green-500 text-lg mb-3">My Motivasi</h4>
+                    <h2 class="font-bold text-emerald-500 text-3xl mb-3 max-w-md">Latar Belakang</h2>
+                    <p class="font-medium text-base text-lime-200 max-w-xl lg:text-lg text-justify">
+                        Saya ingin bergabung dengan Kabinet Asraya Grivika dalam divisi media dan informasi
+                        karena saya ingin mengembangkan website yang bisa digunakan sebagai sumber informasi 
+                        penghubung dengan masyarakat luas. Saya ingin menyebarka eksistensi TPKH ITS. Saya merasa 
+                        kebutuhan website ini sangat penting dalam personal branding TPKH ITS.
+                    </p>
+                </div>
+                <!-- Bagian Front-End Developer -->
+                <div class="w-full px-4 lg:w-1/2 lg:pt-10">
+                    <h2 class="font-semibold text-green-500 text-2xl mb-4">IT Background</h2>
+                    <p class="font-medium text-base text-lime-200 mb-6 lg:text-lg text-justify">
+                        Saya sudah terjun ke dalam dunia IT semenjak SMP di mana saya diperkenalkan dengan Kali Linux.
+                        Semenjak itu saya sudah mengeksplorasi banyak hal dari website development, database, kernel linux,
+                        dan lain hal sebagainya. Saat ini saya ingin fokus mengasah keterampilan saya di dalam bidang 
+                        keilmiahan untuk mengembangkan inovasi bisnis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latar Belakang -->
+
+    <!-- Profil -->
+    <section class="pt-34 pb-30 bg-green-400">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap items-center">
+            <!-- Gambar -->
+            <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
+              <img src="g3.png" alt="Profile Image" class="mx-auto lg:mx-0">
+            </div>
+            
+            <!-- Deskripsi -->
+            <div class="w-full lg:w-1/2">
+              <h2 class="text-3xl font-bold text-white mb-4">My Profile</h2>
+              <p class="text-base font-medium text-slate-100 leading-relaxed text-justify mb-10">
+                Saya adalah mahasiswa ITS jurusan Teknik Telekomunikasi dengan NRP 5048241020. 
+                Saya memilih jurusan ini karena saya ingin memperdalam kemampuan cybersecurity saya. 
+                Dalam bidang cybersecurity terdapat 4 bidang utama yaitu sistem operasi, ilmu komputer, 
+                jaringan internet, dan teknik hacking. Pada bidang jaringan komputer, saya tidak bisa 
+                mempelajarinya secara otodidak. Maka dari itu, saya memilih untuk masuk ke dalam jurusan ini.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Profil -->
+
+    <!-- Info Lebih -->
+    <section class="py-16 bg-stone-900">
+      <div class="container mx-auto px-4">
+          <div class="flex flex-wrap -mx-4">
+  
+              <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                  <div class="bg-gray-500 shadow-md rounded-lg p-6 h-full transform transition duration-300 hover:text-white hover:scale-105">
+                      <h2 class="text-3xl font-bold text-center text-green-500 mb-4">Vision</h2>
+                      <p class="text-base font-medium text-justify text-lime-200">
+                          Menjadi pusat inspirasi dan kolaborasi ilmu pengetahuan di Institut Teknologi Sepuluh
+                          Nopember, tempat bertemunya ide-ide cemerlang dan inovasi tanpa batas, mendorong 
+                          pertumbuhan pengetahuan yang membawa dampak nyata bagi dunia.
+                      </p>
+                  </div>
+              </div>
+  
+              <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                  <div class="bg-gray-500 shadow-md rounded-lg p-6 h-full transform transition duration-300 hover:text-white hover:scale-105">
+                      <h2 class="text-3xl font-bold text-center text-green-500 mb-4">Mission</h2>
+                      <p class="text-base font-medium text-justify text-lime-300">
+                          Menjadi jembatan pengetahuan berkelanjutan di era modern, tempat teknologi AI
+                          dan inspirasi bersinergi untuk membangun masa depan yang lebih cerdas dan bermakna.
+                      </p>
+                  </div>
+              </div>
+  
+              <div class="w-full lg:w-1/3 px-4">
+                  <div class="bg-gray-500 shadow-md rounded-lg p-6 h-full transform transition duration-300 hover:text-white hover:scale-105">
+                      <h2 class="text-3xl font-bold text-center text-green-500 mb-4">Innovation</h2>
+                      <p class="text-base font-medium text-justify text-lime-300">
+                          Mengembangkan website TPKH ITS sebagai bentuk peningkatan media informasi sekaligus personal branding
+                          dalam memikat masyarakat umum maupun perusahaan sponsor. Menjadikan segala informasi TPKH ITS terbuka bagi 
+                          semua orang.
+                      </p>
+                  </div>
+              </div>
+  
+          </div>
+      </div>
+    </section>
+  
+    <!-- Info Lebih -->
+    
+    <!-- Achievement -->
+    <section id="Achievement"class="pt-36 pb-32 bg-stone-900">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-green-500 mb-8 text-center">Achievement</h2>
+          <div class="flex flex-wrap justify-center gap-8">
+            <!-- Card 1 -->
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-xl bg-gray-500 transform hover:scale-105 transition-transform duration-300">
+              <img class="w-full h-48 object-cover" src="g5.jpeg" alt="Image description">
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold text-emerald-500 mb-4">Juara 3 Cloud Computing Club Competition</h3>
+                <p class="text-lime-300 text-base leading-relaxed mb-4 text-justify">
+                  Saya mengikuti kompetisi ini bersama dengan teman-teman yang lain. Posisi saya di tim ini
+                  adalah sebagai ketua. Website yang kelompok saya buat adalah website penyedia layanan daur ulang
+                  sampah
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <button class="px-6 py-2 bg-green-400 text-white rounded-lg hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+                    <a href="https://drive.google.com/file/d/1U0pYP1e4VYGkT6FD-_o9C12DwdN4nNGg/view?usp=sharing">Read More</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-xl bg-gray-500 transform hover:scale-105 transition-transform duration-300">
+              <img class="w-full h-48 object-cover" src="g4.jpeg" alt="Image description">
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold text-emerald-500 mb-4">FOS DKI Jakarta</h3>
+                <p class="text-lime-300 text-base leading-relaxed mb-4 text-justify">
+                  DI FOS DKI Jakarta saya tergabung dalam divisi pendanaan. Tugas saya adalah mengatur logistik setiap event,
+                  berkomunikasi dengan berbagai vendor, melakukan pertemuan dengan sponsor, dan mengatur merchendise setiap event
+                  yang dilaksanakan
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <button class="px-6 py-2 bg-green-400 text-white rounded-lg hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+                    <a href="https://drive.google.com/file/d/1U0pYP1e4VYGkT6FD-_o9C12DwdN4nNGg/view?usp=sharing">Read More</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-xl bg-gray-500 transform hover:scale-105 transition-transform duration-300">
+              <img class="w-full h-48 object-cover" src="g6.jpeg" alt="Image description">
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold text-emerald-500 mb-4">Juara 3 Peneliti Belia Tingkat DKI Jakarta</h3>
+                <p class="text-lime-300 text-base leading-relaxed mb-4">
+                  Saya mengikuti kompetisi ini berdua dengan teman saya. Dalam kompetisi ini, tim saya membuat sebuah robot 
+                  yang dapat melakukan penjelajahan otomatis. Robot ini dapat berfungsi dalam banyak hal, tugas utama dari 
+                  robot ini adalah misi evakuasi.
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <button class="px-6 py-2 bg-green-400 text-white rounded-lg hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+                    <a href="https://drive.google.com/file/d/1U0pYP1e4VYGkT6FD-_o9C12DwdN4nNGg/view?usp=sharing">Read More</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Achievement -->
+
+    <!-- Galery -->
+    <section class="pt-36 pb-32 bg-stone-900">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-green-500 mb-8">My Gallery</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Image 1 -->
+            <div class="relative group">
+              <img class="w-full h-64 object-cover rounded-lg shadow-lg" src="g7.jpeg" alt="Image 1">
+              <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="text-white text-xl font-semibold">Event Sumpah Pemuda</span>
+              </div>
+            </div>
+      
+            <!-- Image 2 -->
+            <div class="relative group">
+              <img class="w-full h-64 object-cover rounded-lg shadow-lg" src="g8.jpeg" alt="Image 2">
+              <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="text-white text-xl font-semibold">Lomba Peneliti Belia</span>
+              </div>
+            </div>
+      
+            <!-- Image 3 -->
+            <div class="relative group">
+              <img class="w-full h-64 object-cover rounded-lg shadow-lg" src="g9.jpeg" alt="Image 3">
+              <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="text-white text-xl font-semibold">Pengurus KPSHD Jakarta Barat</span>
+              </div>
+            </div>
+      
+            <!-- Image 4 -->
+            <div class="relative group">
+              <img class="w-full h-64 object-cover rounded-lg shadow-lg" src="g10.jpeg" alt="Image 4">
+              <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="text-white text-xl font-semibold">Demisioner FOS DKI</span>
+              </div>
+            </div>
+      
+            <!-- Image 5 -->
+            <div class="relative group">
+              <img class="w-full h-64 object-cover rounded-lg shadow-lg" src="g11.jpeg" alt="Image 5">
+              <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="text-white text-xl font-semibold">!7 Agustusan</span>
+              </div>
+            </div>
+      
+            <!-- Image 6 -->
+            <div class="relative group">
+              <img class="w-full h-64 object-cover rounded-lg shadow-lg" src="g12.jpeg" alt="Image 6">
+              <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="text-white text-xl font-semibold">FOSGAT</span>
+              </div>
+            </div>
+      
+            <!-- Image 7 -->
+            <div class="relative group">
+              <img class="w-full h-64 object-cover rounded-lg shadow-lg" src="g13.jpeg" alt="Image 7">
+              <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="text-white text-xl font-semibold">Tim Dana Pensi</span>
+              </div>
+            </div>
+      
+            <!-- Image 8 -->
+            <div class="relative group">
+              <img class="w-full h-64 object-cover rounded-lg shadow-lg" src="g14.jpeg" alt="Image 8">
+              <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="text-white text-xl font-semibold">Pelantikan OSIS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Galery -->
+
+    <!-- Website -->
+    <section class="pt-36 pb-32 bg-stone-900">
+      <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-green-500 mb-12">My Other Website</h2>
+  
+          <div class="space-y-12">
+              <!-- Website Ultrabot Explorer -->
+              <div class="max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden mx-auto">
+                  <div class="group relative overflow-hidden">
+                      <img src="g15.jpeg" class="w-full h-64 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" alt="Image description">
+                  </div>
+                  <div class="p-6">
+                      <h5 class="text-2xl font-semibold text-gray-800 mb-4">Website Ultrabot Explorer</h5>
+                      <p class="text-gray-600 text-lg mb-6 text-justify">
+                          Website ini saya buat untuk keperluan lomba peneliti belia. Lomba ini adalah sebuah lomba 
+                          yang mana mempertandingkan hasil publikasi penelitian.
+                      </p>
+                      <a href="https://o3gmrt39ptza5cbmbnkzug.on.drv.tw/www.Ultrabot_Explorer.com/explorer.html" 
+                         class="text-base font-semibold text-white bg-fuchsia-600 py-3 px-8 rounded-full hover:shadow-lg hover:bg-purple-400 transition duration-300 ease-in-out">
+                          Visit
+                      </a>
+                  </div>
+              </div>
+  
+              <!-- Website Tim Robotik Banyubramanta ITS -->
+              <div class="max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden mx-auto">
+                  <div class="group relative overflow-hidden">
+                      <img src="g16.jpeg" class="w-full h-64 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" alt="Image description">
+                  </div>
+                  <div class="p-6">
+                      <h5 class="text-2xl font-semibold text-gray-800 mb-4">Website Tim Robotik Banyubramanta ITS</h5>
+                      <p class="text-gray-600 text-lg mb-6 text-justify">
+                          Saya pernah magang di salah satu tim robotik ITS yaitu tim Banyubramanta. Pada saat itu saya 
+                          magang di divisi official. Website ini saya buat untuk keperluan presentasi sebagai public relation.
+                          Meskipun saya gagal untuk lolos di tim tersebut, tapi saya tidak berkecil hati dan terus mencari 
+                          kesempatan untuk bisa berkembang.
+                      </p>
+                      <a href="https://o3gmrt39ptza5cbmbnkzug.on.drv.tw/www.Leviathan.com/banyubramanta.html" 
+                         class="text-base font-semibold text-white bg-blue-400 py-3 px-8 rounded-full hover:shadow-lg hover:bg-sky-400 transition duration-300 ease-in-out">
+                          Visit
+                      </a>
+                  </div>
+              </div>
+  
+              <!-- Website Bootcamp Front-End -->
+              <div class="max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden mx-auto">
+                  <div class="group relative overflow-hidden">
+                      <img src="g17.jpeg" class="w-full h-64 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" alt="Image description">
+                  </div>
+                  <div class="p-6">
+                      <h5 class="text-2xl font-semibold text-gray-800 mb-4">Website Bootcamp Front-End</h5>
+                      <p class="text-gray-600 text-lg mb-6 text-justify">
+                          Saya pernah mengikuti sebuah bootcamp front-end programming, dan website ini adalah bentuk
+                          penugasan yang saya buat selama masa pelatihan.
+                      </p>
+                      <a href="https://o3gmrt39ptza5cbmbnkzug.on.drv.tw/www.gundam_mania.com/sukma.html" 
+                         class="text-base font-semibold text-white bg-emerald-400 py-3 px-8 rounded-full hover:shadow-lg hover:bg-teal-400 transition duration-300 ease-in-out">
+                          Visit
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- Website -->
+    
+    <!-- Kembali Ke Awal -->
+    <a id="totop" href="#jumbotron" class="border border-violet-200 hidden flex h-14 w-14 bg-emerald-400 rounded-full justify-center items-center fixed z-[999] bottom-4 right-4 p-4 hover:animate-pulse">
+    <span class="block h-5 w-5 border-t-2 border-l-2 border-white rotate-45 mt-2"></span>
+  </a>
+  
+    <!-- Kembali Ke Awal -->
+      
+    <!-- Footer -->
+    <footer id="Contact" class="bg-green-400 min-h-[60vh] mb-[-1rem] text-white">
+      <div class="infos flex flex-col md:flex-row justify-evenly items-center p-8 min-h-[40vh] font-normal">
+        <h1 class="text-4xl text-center md:text-left">
+          I Putu Sukma Widyantara
+        </h1>
+        <div class="infos1 space-y-2 text-center md:text-left">
+          <a href="https://discord.com/users/1249075706382778368">Discord</a><br>
+          <a href="https://www.instagram.com/sukma_arthur/profilecard/?igsh=MmNtM2xhMWs0eTZz">Instagram</a><br>
+          <a href="https://www.linkedin.com/in/sukma-widyantara-8a2666323/">LinkedIn</a>
+        </div>
+        <div class="infos2 space-y-2 text-center md:text-left">
+          <a href="https://drive.google.com/file/d/1U0pYP1e4VYGkT6FD-_o9C12DwdN4nNGg/view?usp=sharing">About Me</a><br>
+          <p>Resources</p>
+          <p>Affiliate</p>
+        </div>
+      </div>
+    
+      <hr class="border-white my-6">
+    
+      <div class="medias flex flex-col items-center p-4 min-h-[20vh]">
+        <div class="m1 space-x-4 flex justify-center">
+          <i class="feather-icon" data-feather="archive"></i>
+          <i class="feather-icon" data-feather="box"></i>
+          <i class="feather-icon" data-feather="cloud-lightning"></i>
+          <i class="feather-icon" data-feather="code"></i>
+          <i class="feather-icon" data-feather="feather"></i> 
+        </div>
+        <p class="mt-4 text-sm text-center">© Copyright I Putu Sukma Widyantara</p>
+      </div>
+    </footer>
+    
+     <!-- Footer -->
+    
+
+    <script>
+        const navbarToggler = document.getElementById("navbarToggler");
+        const navbarMenu = document.getElementById("mobileMenu");
+      
+        navbarToggler.addEventListener("click", () => {
+          if (navbarMenu.style.maxHeight) {
+            navbarMenu.style.maxHeight = null;
+          } else {
+            navbarMenu.style.maxHeight = `${navbarMenu.scrollHeight}px`; 
+          }
+        });
+        feather.replace();
+      window.addEventListener('load', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        const mainContent = document.getElementById('main-content');
+
+        setTimeout(() => {
+          loadingScreen.style.display = 'none';
+          mainContent.classList.remove('hidden');
+        }, 2000); 
+      });
+      window.addEventListener('load', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        const navbar = document.getElementById('navbar');
+
+        setTimeout(() => {
+          loadingScreen.style.display = 'none'; 
+          navbar.classList.remove('hidden'); 
+        }, 2000);
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const totopButton = document.getElementById("totop");
+        const jumbotron = document.getElementById("jumbotron");
+
+        window.addEventListener("scroll", () => {
+          // Cek posisi scroll
+          const jumbotronVisible = jumbotron.getBoundingClientRect().top >= 0;
+          
+          if (jumbotronVisible) {
+            totopButton.classList.add("hidden");
+          } else {
+            totopButton.classList.remove("hidden");
+          }
+        });
+      });
+    </script>
+</body>
+</html>
